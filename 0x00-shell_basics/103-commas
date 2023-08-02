@@ -1,0 +1,2 @@
+#!/bin/bash
+ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ',' && echo
