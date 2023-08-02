@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ','
+ls -ap | grep -v '/\.\.$' | sort -df | tr '\n' ','
