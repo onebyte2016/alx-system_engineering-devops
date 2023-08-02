@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | LC_COLLATE=C sort -df | tr '\n' ',' | sed 's/,$/\n/'
+printf '%s\n' . .. "$(ls -p | grep -v '/' | sort -d | tr '\n' ',')" "$(ls -p | grep '/$' | sort -d | tr '\n' ',' | sed 's:/$:/:')"
