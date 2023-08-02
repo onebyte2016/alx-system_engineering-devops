@@ -1,2 +1,2 @@
 #!/bin/bash
-printf "%s," . .. .[!.]* [!.]* | LC_ALL=C sort -df | sed 's/\(.*\),/\1\n/'
+ls -ap | LC_COLLATE=C sort -df | tr '\n' ',' | sed 's/,$/\n/'
