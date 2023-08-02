@@ -7,3 +7,4 @@
 #mkdir /tmp/6-firstdirectory -commad to creates a directory named my-first-directory in the /tmp/ directory.
 #mv /tmp/betty /tmp/my_first_directory - to  ove a file from one folder to another within the same directory
 #rm /tmp/my_first_directory/betty - used to delete the file betty from the directory tmp/my_first_directory
+#rmdir /tmp/my_first_directory - to delete the directory in the tmp
