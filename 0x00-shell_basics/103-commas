@@ -1,2 +1,2 @@
 #!/bin/bash
-(ls -aR | grep -E "^[0-9A-Za-z.]" | sed -E 's/^\.{1,2}$/&\//' | LC_ALL=C sort -k1.1,1.1 | tr '\n' ',')
+ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ','
