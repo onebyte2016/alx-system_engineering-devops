@@ -5,3 +5,4 @@
 #ls -l - List the content of the working directory in long format
 #ls -la -Display current directory contents, including hidden files
 #mkdir /tmp/6-firstdirectory -commad to creates a directory named my-first-directory in the /tmp/ directory.
+#mv /tmp/betty /tmp/my_first_directory - to  ove a file from one folder to another within the same directory
