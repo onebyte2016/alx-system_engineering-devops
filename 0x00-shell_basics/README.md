@@ -15,7 +15,7 @@
 #cp -un *.html .. - copies all the HTML files from the current working directory to the parent of the working directory, but only copy files that did not exist in the parent of the working directory or were newer than the versions in the parent of the working directory.You can consider that all HTML files have the extension .html
 #mv [A-Z]* /tmp/u/ -Create a script that moves all files beginning with an uppercase letter to the directory /tmp/u.
 #mkdir -p welcome/to/school -The -p option allows you to create parent directories if they don't exist. This way, you can create all the required directories in a single command without needing multiple lines.
-#ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ',' && echo -Write a command that lists all the files and directories of the current directory, separated by commas (,).
+#printf "%s," . .. .[!.]* [!.]* | LC_ALL=C sort -df | sed 's/\(.*\),/\1\n/' - #ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ',' && echo -Write a command that lists all the files and directories of the current directory, separated by commas (,).
 
 Directory names should end with a slash (/)
 Files and directories starting with a dot (.) should be listed

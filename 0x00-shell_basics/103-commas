@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -aQp | grep -v '/\.\.$' | sort -df | tr '\n' ',' && echo
+printf "%s," . .. .[!.]* [!.]* | LC_ALL=C sort -df | sed 's/\(.*\),/\1\n/'
