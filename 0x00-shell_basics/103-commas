@@ -1,2 +1,2 @@
 #!/bin/bash
-ls -ap | grep -v '/\.\.$' | sort -df | tr '\n' ','
+ printf '%s\n'  $(ls -ap | LC_ALL=C sort -t/ -k1,1d -k1.2,1) | tr '\n' ','
