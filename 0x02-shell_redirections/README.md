@@ -24,3 +24,4 @@ this is i\o shell redirection readme
 #find . -empty -printf '%f\n' : Write a command that finds all empty files and directories in the current directory and all sub-directories.
 #find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f  :Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
 #cut -c l | paste -s -d '' : Create a script that decodes acrostics that use the first letter of each line.
+#tail -n +2 | cut -f 1 | sort -k 1 | uniq -c | sort -rnk 1 | head -n 11 | rev |cut -d ' ' -f 1 | rev  : Write a script that parses web servers logs in TSV format as input and displays the 11 hosts or IP addresses which did the most requests.
