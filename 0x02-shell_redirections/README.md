@@ -13,3 +13,4 @@ this is i\o shell redirection readme
 #ls -t | head : A script that displays the 10 newest files in the current directory.
 #sort | uniq -u :Create a script that takes a list of words as input and prints only words that appear exactly once.
 #grep "root" /etc/passwd : Display lines containing the pattern “root” from the file /etc/passwd
+#grep "bin" /etc/passwd | wc -l : Display the number of lines that contain the pattern “bin” in the file /etc/pass
