@@ -11,3 +11,4 @@ this is i\o shell redirection readme
 #find . -type f -name *.js -delete : Write a script that deletes all the regular files (not the directories) with a .js extension that are present in the current directory and all its subfolders.
 #find . -mindepth 1 -type d | wc -l : Write a script that counts the number of directories and sub-directories in the current directory.
 #ls -t | head : A script that displays the 10 newest files in the current directory.
+#sort | uniq -u :Create a script that takes a list of words as input and prints only words that appear exactly once.
