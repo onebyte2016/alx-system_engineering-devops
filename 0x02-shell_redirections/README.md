@@ -22,3 +22,5 @@ this is i\o shell redirection readme
 #rev : Write a script that reverse its input.
 #cut -d ':' -f1,6 /etc/passwd | sort :Write a script that displays all users and their home directories, sorted by users.
 #find . -empty -printf '%f\n' : Write a command that finds all empty files and directories in the current directory and all sub-directories.
+#find -type f -name "*.gif" | rev | cut -d "/" -f 1 | cut -d '.' -f 2- | rev | LC_ALL=C sort -f  :Write a script that lists all the files with a .gif extension in the current directory and all its sub-directories.
+#cut -c l | paste -s -d '' : Create a script that decodes acrostics that use the first letter of each line.
