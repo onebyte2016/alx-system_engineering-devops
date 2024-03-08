@@ -33,21 +33,21 @@ defaults
         errorfile 503 /etc/haproxy/errors/503.http
         errorfile 504 /etc/haproxy/errors/504.http
 
-frontend ruthdevv-frontend
+frontend onebytesofware-frontend
         bind *:80
         mode http
         http-request redirect scheme https code 301 unless { ssl_fc }
         http-request set-header X_Forwarded-Proto http
-        default_backend ruthdevv-backend
+        default_backend onebytesofware-backend
 
-frontend ruthdevv-frontend-https
-        bind *:443 ssl crt /etc/haproxy/certs/www.ruthdevv.tech.pem
+frontend onebytesoftware-frontend-https
+        bind *:443 ssl crt /etc/haproxy/certs/www.onebytesoftware.tech.pem
         http-request set-header X-Forwarded-Proto https
-        default_backend ruthdevv-backend
+        default_backend onebytesoftware-backend
 
 backend ruthdevv-backend
         balance roundrobin
-        server 494040-web-01 54.237.93.188:80 check
-        server 494040-web-02 100.27.14.144:80 check
+        server 501362-web-01 52.87.254.124:80 check
+        server 501362-web-02 100.25.129.81:80 check
 #       server 494040-web-01 54.237.93.188:80 check
 #       server 494040-web-02 100.27.14.144:80 check
